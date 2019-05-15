@@ -1,0 +1,66 @@
+<div class="ui-g-row">
+  <div class="ui-g-offset-3 ui-g-6" style="text-align: center">
+    <h2>Installation Steps</h2>
+
+    <h3>Installation through NPM</h3>
+    <pre>
+      <code class="language-css" pCode>
+      npm install --save ng-accordion
+      </code>
+    </pre>
+
+    <h3>Import module</h3>
+    <pre>
+      <code class="language-css" pCode>
+      import {{'{'}}NgAccordionModule{{'}'}} from 'ng-accordion';
+      </code>
+    </pre>
+
+    <h3>Demo</h3>
+    <h4>
+      Only one accordion section open at a time.
+    </h4>
+    <lib-ng-accordion>
+      <lib-ng-accordion-section [header]="'Demo Accordion Section 1'">Demo Accordion Section 1 Content</lib-ng-accordion-section>
+      <lib-ng-accordion-section [header]="'Demo Accordion Section 2'">Demo Accordion Section 2 Content</lib-ng-accordion-section>
+      <lib-ng-accordion-section [header]="'Demo Accordion Section 3'">Demo Accordion Section 3 Content</lib-ng-accordion-section>
+    </lib-ng-accordion>
+    Source Code
+    <pre>
+      <code class="language-css" pCode>
+      {{demo1Src}}
+      </code>
+    </pre>
+
+    <h4>
+      Allow multiple accordion sections open at a time.
+    </h4>
+    <lib-ng-accordion [openMultiple]="true">
+      <lib-ng-accordion-section [header]="'Demo Accordion Section 1'">Demo Accordion Section 1 Content</lib-ng-accordion-section>
+      <lib-ng-accordion-section [header]="'Demo Accordion Section 2'">Demo Accordion Section 2 Content</lib-ng-accordion-section>
+      <lib-ng-accordion-section [header]="'Demo Accordion Section 3'">Demo Accordion Section 3 Content</lib-ng-accordion-section>
+    </lib-ng-accordion>
+    Source Code
+    <pre>
+      <code class="language-css" pCode>
+      {{demo2Src}}
+      </code>
+    </pre>
+
+    <h4>
+      Set accordion open property on initialization
+    </h4>
+    <lib-ng-accordion>
+      <lib-ng-accordion-section [header]="'Demo Accordion Section 1'" [active]="true">Demo Accordion Section 1 Content</lib-ng-accordion-section>
+      <lib-ng-accordion-section [header]="'Demo Accordion Section 2'">Demo Accordion Section 2 Content</lib-ng-accordion-section>
+      <lib-ng-accordion-section [header]="'Demo Accordion Section 3'">Demo Accordion Section 3 Content</lib-ng-accordion-section>
+    </lib-ng-accordion>
+    Source Code
+    <pre>
+      <code class="language-css" pCode>
+      {{demo3Src}}
+      </code>
+    </pre>
+
+  </div>
+</div>
